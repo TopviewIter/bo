@@ -17,7 +17,7 @@ public class BuildTree {
 	private static TreeNode t;
 
 	// build tree
-	private static void buildTree(TreeNode node, int data) {
+	public static void buildTree(TreeNode node, int data) {
 
 		if (t == null) { // build root node
 			t = new TreeNode(data);
@@ -213,7 +213,7 @@ public class BuildTree {
 		levelVisitTree(t);
 	}
 
-	private static class TreeNode {
+	public static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
